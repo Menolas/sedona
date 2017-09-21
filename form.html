@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Седона</title>
+</head>
+<body>
+  <div class="desktop-wrap">
+    <div class="desktop-wrap__inside">
+      <header class="page-header">
+        <button class="toggler" type="button"></button>
+        <ul class="main-nav  main-nav--open">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">  
+            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link--active">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">  
+            <a class="main-nav__link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+        <a class="page-header__logo" href="index.html"></a>
+        <div class="page-header__greeting  page-header__greeting--inner"></div>
+      </header>
+      <main class="main-content  main-content--inner  main-content--form">
+        <div class="main-content__promotional-text">
+          <h1 class="main-content__header">Оставьте свой отзыв</h1>
+          <div class="main-content__bidding">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях 
+          </div> 
+        </div>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__wrap">
+            <fieldset class="fieldset  fieldset--customer-info">
+              <legend class="fieldset__title">Представьтесь:</legend>
+              <div class="fieldset__wrap">
+                <div class="fieldset__wrap-input-label">
+                  <label class="fieldset__label" for="customer-name">Имя&#42;:</label>
+                  <div class="fieldset__wrap-input">
+                    <input class="fieldset__input" type="text" name="name" id="customer-name" placeholder="Петр" required>
+                  </div>
+                </div>
+                <div class="fieldset__wrap-input-label"> 
+                  <label class="fieldset__label" for="customer-surname">Фамилия&#42;:</label>
+                  <div class="fieldset__wrap-input">
+                    <input class="fieldset__input" type="text" name="surname" id="customer-surname" placeholder="Иванов" required>
+                  </div>
+                </div>
+                <div class="fieldset__wrap-input-label">  
+                  <label class="fieldset__label" for="customer-middlename">Отчество:</label>
+                  <div class="fieldset__wrap-input">
+                    <input class="fieldset__input" type="text" name="middlename" id="customer-middlename" placeholder="Александрович">
+                  </div>  
+                </div>  
+              </div>
+            </fieldset>
+            <fieldset class="fieldset  fieldset--contact-info">
+              <legend class="fieldset__title">Контактная информация:</legend>
+              <div class="fieldset__wrap">
+                <div class="fieldset__wrap-input-label">
+                  <label class="fieldset__label" for=""><span class="fieldset__hide">Контактный</span> телефон&#42;:</label>
+                  <div class="fieldset__wrap-input  fieldset__wrap-input--phone">
+                    <input class="fieldset__input" type="tel" name="tel" id="customer-tel" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+                  </div>
+                </div>
+                <div class="fieldset__wrap-input-label">  
+                  <label class="fieldset__label" for="">Электронная почта&#42;:</label>
+                  <div class="fieldset__wrap-input  fieldset__wrap-input--email">
+                    <input class="fieldset__input" type="email" name="email" id="customer-email" placeholder="Введите e-mail" required>
+                  </div>
+                </div>  
+              </div>
+            </fieldset>  
+            <fieldset class="fieldset  fieldset--radio">
+              <legend class="fieldset__title">Ваше общее впечатление:</legend>
+              <div class="fieldset__wrap">
+                <div class="fieldset__wrap-input-label">
+                  <input class="fieldset__input" type="radio" name="impression" id="positive" value="positive" checked>
+                  <label class="fieldset__label" for="positive">Скорее положительное</label>
+                </div>
+                <div class="fieldset__wrap-input-label">  
+                  <input class="fieldset__input" type="radio" name="impression" id="negative" value="negative">
+                  <label class="fieldset__label" for="negative">Скорее отрицательное</label>
+                </div>
+                <div class="fieldset__wrap-input-label">  
+                  <input class="fieldset__input" type="radio" name="impression" id="nsure" value="nsure">
+                  <label class="fieldset__label" for="nsure">Затрудняюсь ответить</label>
+                </div>  
+              </div>
+            </fieldset>  
+            <fieldset class="fieldset  fieldset--checkbox">
+              <legend class="fieldset__title">Посещенные<br>достопримечательности:</legend>
+              <div class="fieldset__wrap">
+                <div class="fieldset__wrap-input-label">
+                  <input class="fieldset__input" type="checkbox" name="bridge" id="bridge" checked>
+                  <label class="fieldset__label" for="bridge">Мост Дьявола</label>
+                </div>
+                <div class="fieldset__wrap-input-label">
+                  <input class="fieldset__input" type="checkbox" name="park" id="park" checked>
+                  <label class="fieldset__label" for="park">Слайд-парк</label>
+                </div>
+                <div class="fieldset__wrap-input-label">
+                  <input class="fieldset__input" type="checkbox" name="bell-mountain" id="bell-mountain">
+                  <label class="fieldset__label" for="bell-mountain">Гора-Колокол</label>
+                </div>
+                <div class="fieldset__wrap-input-label">
+                  <input class="fieldset__input" type="checkbox" name="red-rocks" id="red-rocks" checked>
+                  <label class="fieldset__label" for="red-rocks">Красные скалы</label>
+                </div>
+              </div>    
+            </fieldset>  
+            <fieldset class="fieldset  fieldset--textarea">
+              <legend class="fieldset__title">Опишите свои эмоции:</legend>
+              <textarea class="fieldset__input" name="describe" placeholder="Опишите подробно все свои восторги"></textarea>
+            </fieldset>
+          </div>
+          <div class="form__wrap">
+            <div class="modal">
+              <h3 class="modal__header">Ваш вызов отправлен!</h3>
+              <div class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+              </div>
+              <div class="modal__btn-block">
+                <button class="btn btn--modal">Закрыть окно</button>
+              </div>  
+            </div>
+            <input class="btn  btn--sent-review" type="submit" value="Отправить отзыв">
+            <div class="form__required-fields">&#42; &#8212;обязательные поля</div> 
+          </div>
+          <div class="modal  modal__failure">
+            <h3 class="modal__header">Что-то пошло не так!</h3>
+            <div class="modal__text">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+            </div>
+            <div class="btn btn--modal-failure">ок</div>
+          </div>   
+        </form>  
+      </main>
+      <footer class="page-footer">
+        <span class="page-footer__slogan">#VISITSEDONA</span>
+        <section class="social">
+          <a class="social__link" href="#">
+            <svg class="social__link-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+              <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                  <rdf:Description rdf:about=""/>
+                </rdf:RDF>
+              </x:xmpmeta>
+              <?xpacket end="w"?></metadata>
+              <image id="icon-twitter.svg" width="18" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAQAAACI04Q8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBASNDYal2+pAAAAm0lEQVQoz32RURWCQBRE7yHBRiACEYyADYhABBpwTEAENAERtAE2gAbXDxTdFbj7OztnZh4GgySvcVJ1MFhaYePdIpJ0xrTYqJP1KilMGTNmINAyUpEDJTEPzunPyTHxaQT7d8g9TpJxI3DEDFttotAiGXDhuetzhcUpHKTKRZZtyr9Oa7OvaFvWfQbGftPl9wZgsEq2Gqzjo78AGIVMdBRlPCcAAAAASUVORK5CYII="/>
+            </svg>
+            Мы в Твиттере
+          </a>
+          <a class="social__link" href="#">
+            <svg class="social__link-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+              <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                  <rdf:Description rdf:about=""/>
+                </rdf:RDF>
+              </x:xmpmeta>
+              <?xpacket end="w"?></metadata>
+              <image id="icon-facebook.svg" width="9" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAQAAAAjiTzDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCAwUAwEsb/4HAAAAW0lEQVQY07WNQRGAMBADt0wFVEolnCRwAMpAAg6QgITwuMK0ffXD/rKTSRBCaNalgotVFa7uWkUgk3A2DkDIvoIJETEyLwmDINExwYAKMmAvaeH0R9rHsa2f1QOaa0/UgAJXogAAAABJRU5ErkJggg=="/>
+            </svg>
+            Мы в Фейсбуке
+          </a>
+          <a class="social__link" href="#">
+            <svg class="social__link-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="14" viewBox="0 0 20 14">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+              <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                  <rdf:Description rdf:about=""/>
+                </rdf:RDF>
+              </x:xmpmeta>
+              <?xpacket end="w"?></metadata>
+              <image id="icon-youtube.svg" width="20" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAQAAACFzfR7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCAwUAxfYu0tWAAAAZklEQVQoz63SQRGAMAxE0V8GAZWAhErAQpWABFDaOigOljNtZpoDe8y8Q7ITlFQ0S1EKKmzMU4PkYMDiYyPM3Dym7NbehaIutf4eC2Jh946rMYucHMTvsK8nk0ZkwT96rC5X8T7FC+C9oZoMbr76AAAAAElFTkSuQmCC"/>
+            </svg>
+            Мы в Ютубе
+          </a>
+        </section>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <div class="page-footer__copyright-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+              <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                  <rdf:Description rdf:about=""/>
+                </rdf:RDF>
+              </x:xmpmeta>
+              <?xpacket end="w"?></metadata>
+              <image id="htmlacademy.svg" width="27" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAQAAAAEqGq7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCAwUAzB9sf49AAABtklEQVQ4y5WUYXGEMBCFP6ogEpCAgyIBCUhAQhwgAQlISKvgWgXBQepg+yN7SQi5u3Yzw0wG3u7jvd3tuMeAwTAA70BPD8DBwQ/fwBc/HHLEjzscMPKf+IAO0cvBAXymCl+gCWPld2WkIUi+XEOqg0GQWK17BqujE3h7+P3E/uyfpZGwxyEEhA1zoZkfRRhWhMAMWAKB5TVsJiCsSaSeDcEzPoYNOATHUEky4hB2+iuspNYwQFlYTAlbKmoN3zBYBM+UYRdqALiYvfirqHCCbU1rFgKBudJxK6ttDYKWkT0yUcjIraxmEQK2gu0IlokbwsqgVkylkpG1P7XTgCXgmVgQTWyuvk346E+SZFeaIcrWtntl1HaymJTGJTUewDYk5fdMwHoS8QGsZ9ZaIz5RewlzOAZWrWX/Cos1rLauSx7Fk6agNThRklnluJ+AfTWmvXZG7ohqwvPjVm2NLMmtHFC5vxF0aIQt2Xyn61nKhZf6X6fSqD/XrsxjGqdN0qieFkLdlQpLArm0GIqYle5+opsTTgXhU5jUTrErS/pnNS/Rp+w2V7+s2GZks/3ZgOewqFzAgjTPLzlN368OVqaiAAAAAElFTkSuQmCC"/>
+            </svg>
+          </div>
+          лендинг интенсива «Продвинутый HTML и CSS»
+        </a>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.js"></script>  
+</body>
+</html>  
