@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Седона</title>
+</head>
+<body>
+  <div class="desktop-wrap">
+    <div class="desktop-wrap__inside">
+      <header class="page-header">
+        <button class="toggler" type="button"></button>
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">  
+            <a class="main-nav__link  main-nav__link--active">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">  
+            <a class="main-nav__link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+        <a class="page-header__logo" href="index.html"></a>
+        <div class="page-header__greeting  page-header__greeting--inner"></div>
+      </header>
+      <main class="main-content  main-content--inner">
+        <div class="main-content__promotional-text">
+          <h1 class="main-content__header">Фото и видео</h1>
+          <div class="main-content__bidding">
+            Не можете решиться на путешествие из-за курса?
+            Фотографии помогут вам забыть о политике и экономике.
+          </div> 
+        </div>
+        <section class="gallery">
+          <article class="gallery__item">
+            <a class="gallery__item-link" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/desktop/photo-1-desktop-jpg.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/photo-1-tablet-jpg.jpg">
+                <img class="gallery__picture" src="img/photo-1-mobile-jpg.jpg" alt="Неродные просторы">
+              </picture>
+            </a>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <div class="gallery__item-name">Неродные просторы</div>
+                <div class="gallery__item-author">Автор фото: Борис</div>
+              </div>
+              <div class="gallery__item-like-block">
+                <div class="gallery__item-like-icon"></div>
+                <span class="gallery__item-like-counter">1350</span>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__item">
+            <a class="gallery__item-link">
+              <picture>
+                <source media="(min-width: 1280px") srcset="img/desktop/photo-2-desktop-jpg.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/photo-2-tablet-jpg.jpg">
+                <img class="gallery__picture" src="img/photo-2-mobile-jpg.jpg" alt="Местная растительность">
+              </picture>
+            </a>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <div class="gallery__item-name">Местная растительность</div>
+                <div class="gallery__item-author">Автор фото: Сергей</div>
+              </div>
+              <div class="gallery__item-like-block">
+                <div class="gallery__item-like-icon"></div>
+                <span class="gallery__item-like-counter">143</span>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__item">
+            <a class="gallery__item-link" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/desktop/photo-3-desktop-jpg.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/photo-3-tablet-jpg.jpg">
+                <img class="gallery__picture" src="img/photo-3-mobile-jpg.jpg" alt="Дорога на север">
+              </picture>
+            </a>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <div class="gallery__item-name">Дорога на север</div>
+                <div class="gallery__item-author">Автор фото: Петр</div>
+              </div>
+              <div class="gallery__item-like-block">
+                <div class="gallery__item-like-icon"></div>
+                <span class="gallery__item-like-counter">96</span>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__item">
+            <a class="gallery__item-link" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/desktop/photo-4-desktop-jpg.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/photo-4-tablet-jpg.jpg">
+                <img class="gallery__picture" src="img/photo-4-mobile-jpg.jpg" alt="Мост Дьявола">
+              </picture>
+            </a>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <div class="gallery__item-name">Мост Дьявола</div>
+                <div class="gallery__item-author">Автор фото: Антон</div>
+              </div>
+              <div class="gallery__item-like-block">
+                <div class="gallery__item-like-icon"></div>
+                <span class="gallery__item-like-counter">254</span>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="video">
+          <div class="video__promo-text">
+            <h2 class="video__heading">Все еще сомневаетесь?</h2>
+            <div class="video__bidding">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+            </div>
+          </div>  
+          <div class="video__content">
+            <div class="video-control">
+              <div class="video-control__up">
+                <div class="video-control__scale"></div>
+                <div class="video-control__mark"></div>
+                <div class="video-control__replay"></div>
+                <div class="video-control__cc"></div>
+                <div class="video-control__screen"></div>
+              </div>
+              <div class="video-control__down"></div>
+            </div>
+          </div>
+        </section> 
+      </main>
+      <footer class="page-footer">
+        <span class="page-footer__slogan">#VISITSEDONA</span>
+        <section class="social">
+          <a class="social__link" href="#">
+            
+            Мы в Твиттере
+          </a>
+          <a class="social__link" href="#">
+            
+            Мы в Фейсбуке
+          </a>
+          <a class="social__link" href="#">
+            
+            Мы в Ютубе
+          </a>
+        </section>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <div class="page-footer__copyright-logo">
+           
+          </div>
+          лендинг интенсива «Продвинутый HTML и CSS»
+        </a>
+      </footer>
+    </div>  
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>  
