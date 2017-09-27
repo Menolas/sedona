@@ -1,0 +1,36 @@
+.social-list {
+  .ul-style();
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 35px 0;
+  margin-bottom: 40px;	
+}
+
+.social-list__link {
+  display: block;
+  width: 47px;
+  height: 48px;
+  text-align: center;
+
+  font-size: 0;
+  line-height: 60px;
+
+  background-color: #81b3d2;
+}
+
+.social-list__icon {
+  fill: @white;
+}
+
+.social-list__link:hover {
+  background-color: #669ec0;
+}
+
+.social-list__link:active {
+  background-color: #5496bd;
+}
+
+.social-list__link:active .social__link-icon {
+  opacity: 0.3;
+}
