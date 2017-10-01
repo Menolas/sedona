@@ -1,11 +1,20 @@
 .slogan {
+  position: relative;
+
+  margin: 0 auto;
   padding-top: 42px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-bottom: 5px;
+  width: 320px;
+
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .slogan__title {
   margin-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
   text-align: center;
 
   .header-style();
@@ -13,7 +22,62 @@
 
 .slogan__bidding {
   text-align: center;
-
+  padding-right: 32px;
+  padding-left: 32px;
   .text-style();
   line-height: 1.85;
+}
+
+.slogan__triangle {
+  position: absolute;
+  z-index: 100;
+}
+
+.slogan__triangle--top {
+  top: -26px;
+  left: 0;
+}
+
+.slogan__triangle--bottom {
+  bottom: -37px;
+  left: 0;
+}
+
+.slogan--inner .slogan__bidding {
+  padding-right: 23px;
+  padding-left: 21px;
+}
+
+@media (min-width: 768px) {
+  .slogan {
+    padding-top: 51px;
+    padding-bottom: 55px;
+    width: 486px;
+  }
+
+  .slogan__title {
+    font-size: 21px;
+    line-height: 1.238;
+  }
+
+  .slogan__triangle {
+    display: none;
+  }
+
+  .slogan--inner {
+    padding-top: 76px;
+    padding-bottom: 75px;
+  }
+
+  .slogan--inner .slogan__title {
+    font-size: 30px;
+    line-height: 0.86;
+  }
+}
+
+@media (min-width: 1280px) {
+  .slogan--inner {
+    padding-top: 113px;
+    padding-bottom: 77px;
+  }
 }

@@ -2,9 +2,9 @@
   .ul-style();
   display: flex;
   justify-content: space-between;
-  
+
   margin: 35px 0;
-  margin-bottom: 40px;	
+  margin-bottom: 40px;
 }
 
 .social-list__link {
@@ -33,4 +33,19 @@
 
 .social-list__link:active .social__link-icon {
   opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .social-list {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .social-list__item {
+    margin-right: 6px;
+  }
+
+  .social-list__item:last-child {
+    margin-right: 0;
+  }
 }

@@ -34,8 +34,7 @@
 
 .features__icon--house {
   left: -48px;
-  top: -10px;	
-
+  top: -10px;
   width: 39px;
   height: 37px;
 }
@@ -73,4 +72,74 @@
 
 .features__icon-svg {
   fill: #81b3d2;
+}
+
+@media (min-width: 768px) {
+  .features {
+    display: flex;
+
+    padding-top: 57px;
+    padding-bottom: 66px;
+    padding-left: 51px;
+    padding-right: 46px;
+    width: 768px;
+  }
+
+  .features__item {
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 108px;
+  }
+
+  .features__item:first-child {
+    order: 1;
+
+    margin-right: 102px;
+    width: 156px;
+  }
+
+  .features__item:nth-child(2) {
+    order: 3;
+    width: 164px;
+  }
+
+  .features__item:nth-child(3) {
+    order: 2;
+
+    margin-right: 99px;
+    width: 151px;
+  }
+
+  .features__title {
+    font-size: 21px;
+    line-height: 1.238;
+  }
+
+  .features__icon {
+    top: 0;
+    left: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .features {
+    padding-bottom: 85px;
+    padding-left: 73px;
+    padding-right: 93px;
+    width: 1200px;
+  }
+
+  .features__item:first-child {
+    margin-right: 134px;
+    width: 252px;
+  }
+
+  .features__item:nth-child(3) {
+    margin-right: 151px;
+    width: 283px;
+  }
+
+  .features__item:nth-child(2) {
+    width: 214px;
+  }
 }

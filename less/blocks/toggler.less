@@ -4,10 +4,23 @@
   border: none;
 
   font-size: 0;
-  
   background-color: transparent;
 }
 
 .toggler__svg {
-  fill: #82b5d0;
+  fill: @blue;
+}
+
+.toggler--open {
+  display: none;
+}
+
+.toggler--open .toggler__svg {
+  fill: @white;
+}
+
+@media (min-width: 768px) {
+  .toggler {
+    display: none;
+  }
 }

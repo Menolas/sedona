@@ -1,4 +1,19 @@
 .desktop-wrap {
   margin: 0 auto;
   width: 320px;
+
+  background-color: @white;
+}
+
+@media (min-width: 768px) {
+  .desktop-wrap {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .desktop-wrap {
+    width: 1200px;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  }
 }

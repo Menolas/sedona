@@ -1,5 +1,8 @@
 .hotels-promotion {
-  padding: 27px 20px 50px 20px;
+  padding-top: 27px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
   text-align: center;
 }
 
@@ -17,4 +20,23 @@
 
   .text-style();
   line-height: 1.71;
+}
+
+@media (min-width: 768px) {
+  .hotels-promotion {
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-bottom: 58px;
+    width: 458px;
+  }
+
+  .hotels-promotion__title {
+    font-size: 30px;
+    line-height: 0.86;
+  }
+
+  .hotels-promotion__text {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
