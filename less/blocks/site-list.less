@@ -1,7 +1,7 @@
 .site-list {
   display: none;
   .ul-style();
-  background-color: #82b5d0;
+  background-color: @blue;
 }
 
 .site-list--open {
@@ -30,4 +30,56 @@
 
 .site-list__item:last-child {
   
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+
+    padding-left: 49px;
+    padding-right: 26px;
+
+    background-color: @white;
+  }
+
+  .site-list__item {
+    border: none;
+  }
+
+  .site-list__link {
+    color: @black;
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .site-list__item:first-child {
+    margin-right: 76px;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: 210px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-right: 49px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .site-list {
+    padding-left: 91px;
+    padding-right: 70px;
+  }
+
+  .site-list__item:first-child {
+    margin-right: 162px;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: 382px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-right: 137px;
+  }
 }

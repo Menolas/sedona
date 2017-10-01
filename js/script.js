@@ -1,4 +1,4 @@
-var block = document.querySelector('.site-list');
+/* var block = document.querySelector('.site-list');
 if (block) {
   block.classList.add('site-list--open');
 }
@@ -56,3 +56,4 @@ var marker = new google.maps.Marker({
   icon: image,
 });
 }
+*/

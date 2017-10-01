@@ -4,10 +4,11 @@
 
 .benefits__content {
   position: relative;
-
-  padding: 27px 35px;
-  padding-bottom: 29px;
   text-align: center;
+
+  padding-top: 27px;
+  padding-right: 35px;
+  padding-left: 35px;
 
   background-color: #efefef;
 }
@@ -51,9 +52,6 @@
 
 .benefits__item:first-child .benefits__content {
   padding-top: 78px;
-  background-image: url("../img/bg-triangle.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
 }
 
 .benefits__item:nth-child(2) .benefits__content{
@@ -68,4 +66,104 @@
 .benefits__number {
   display: block;
   margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .benefits__content::after {
+    display: none;
+  }
+
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .benefits__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .benefits__item:first-child,
+  .benefits__item:nth-child(2) {
+    width: 768px;
+  }
+
+  .benefits__content {
+    padding-top: 50px;
+    padding-right: 56px;
+    padding-left: 56px;
+    padding-bottom: 49px;
+    width: 144px;
+  }
+
+  .benefits__title {
+    font-size: 21px;
+    line-height: 1.238;
+  }
+
+  .benefits__picture {
+    width: 512px;
+    height: 256px;
+  }
+
+  .benefits__item:first-child .benefits__content {
+    padding-top: 46px;
+    padding-right: 47px;
+    padding-left: 47px;
+    width: 162px;
+  }
+
+  .benefits__item:nth-child(2) .benefits__content {
+    order: 1;
+
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 156px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .benefits__item:first-child,
+  .benefits__item:nth-child(2) {
+    width: 1200px;
+  }
+
+  .benefits__content {
+    padding-left: 57px;
+    padding-right: 57px;
+    padding-bottom: 70px;
+    width: 286px;
+  }
+
+  .benefits__item:nth-child(4) .benefits__content {
+    padding-right: 69px;
+    padding-left: 69px;
+    width: 262px;
+  }
+
+  .benefits__picture {
+    width: 800px;
+    height: 256px;
+  }
+
+  .benefits__item:first-child .benefits__content {
+    padding-top: 53px;
+    padding-right: 67px;
+    padding-left: 67px;
+    width: 266px;
+  }
+
+  .benefits__item:nth-child(2) .benefits__content {
+    padding-top: 58px;
+    padding-right: 92px;
+    padding-left: 92px;
+    width: 216px;
+  }
+
+  .benefits__title {
+    margin-right: auto;
+    margin-left: auto;
+    width: 155px;
+  }
 }

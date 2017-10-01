@@ -2,6 +2,8 @@
   position: absolute;
   bottom: -66px;
   right: 20px;
+
+  width: 280px;
 }
 
 .video-control__up {
@@ -9,8 +11,7 @@
   text-align: center;
 
   padding-left: 22px;
-  padding-top: 21px;	
-  width: 258px;
+  padding-top: 21px;
   height: 24px;
   
   background-color: rgba(0,0,0,0.6);
@@ -81,4 +82,18 @@
    height: 20px;
    
    background: url("../img/fullscreen-svg.png") no-repeat center;
+}
+
+@media (min-width: 768px) {
+  .video-control {
+    left: 0;
+
+    width: 648px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .video-control {
+    width: 800px;
+  }
 }

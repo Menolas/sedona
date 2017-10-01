@@ -1,12 +1,15 @@
 .video {
   text-align: center;
+
   padding-top: 35px;
   padding-bottom: 105px;
+  width: 320px;
 }
 
 .video__promo-text {
-  padding: 0 40px;
-  padding-bottom: 37px;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  width: 236px;
 }
 
 .video__title {
@@ -24,4 +27,41 @@
   width: 320px;
   height: 201px;
   background: url("../img/video-mobile@1x.jpg") no-repeat center;
+}
+
+@media (min-width: 768px) {
+  .video {
+    margin: 0 auto;
+    padding-top: 69px;
+    padding-bottom: 40px;
+    width: 648px;
+  }
+
+  .video__promo-text {
+    margin-bottom: 78px;
+    width: 415px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    line-height: 0.86px;
+  }
+
+  .video__content {
+    width: 648px;
+    height: 499px;
+
+    background-color: @blue;
+  }
+}
+
+@media (min-width: 1280px) {
+  .video {
+    width: 800px;
+  }
+  
+  .video__content {
+    width: 800px;
+    height: 500px;
+  }
 }
