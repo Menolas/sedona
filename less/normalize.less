@@ -124,9 +124,9 @@ figure { margin: 1em 40px; }
 
 //  * Address differences between Firefox and other browsers.
 hr {
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	height: 0;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
 }
 
 //  * Contain overflow in all browsers.
@@ -189,58 +189,57 @@ html input[disabled] {
 //  * Remove inner padding and border in Firefox 4+.
 button
 input {
-	&::-moz-focus-inner {
-	  border: 0;
-	  padding: 0;
-	}
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 }
 
 //  * Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet.
 input {
-	line-height: normal;
-	&[type="reset"],
-	&[type="submit"] {
-		-webkit-appearance: button;
-		cursor: pointer;
-	}
+  line-height: normal;
+  &[type="reset"],
+  &[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+  }
 
-	// * It's recommended that you don't attempt to style these elements.
-	// * Firefox's implementation doesn't respect box-sizing, padding, or width.
-	// * 1. Address box sizing set to `content-box` in IE 8/9/10.
-	// * 2. Remove excess padding in IE 8/9/10.
-	&[type="checkbox"],
-	&[type="radio"] {
-	  box-sizing: border-box;
-	  padding: 0;
-	}
+// * It's recommended that you don't attempt to style these elements.
+// * Firefox's implementation doesn't respect box-sizing, padding, or width.
+// * 1. Address box sizing set to `content-box` in IE 8/9/10.
+// * 2. Remove excess padding in IE 8/9/10.
+&[type="checkbox"],
+&[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
 
-	//  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
-	//  * `font-size` values of the `input`, it causes the cursor style of the
-	//  * decrement button to change from `default` to `text`.
-	&[type='number'] {
-	  &::-webkit-inner-spin-button,
-	  &::-webkit-outer-spin-button {
-			height: auto;
-	  }
-	}
+//  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+//  * `font-size` values of the `input`, it causes the cursor style of the
+//  * decrement button to change from `default` to `text`.
+&[type="number"] {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    height: auto;
+  }
+}
 
-	// * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
-	// * 2. Address `box-sizing` set to `border-box` in Safari and Chrome (include `-moz` to future-proof).
-	&[type='search'] {
-	  -webkit-appearance: textfield;
-	  -moz-box-sizing: content-box;
-	  -webkit-box-sizing: content-box;
-	  box-sizing: content-box;
+// * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+// * 2. Address `box-sizing` set to `border-box` in Safari and Chrome (include `-moz` to future-proof).
+&[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 
 	//  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
 	//  * Safari (but not Chrome) clips the cancel button when the search input has
 	//  * padding (and `textfield` appearance).
-		&::-webkit-search-cancel-button,
-		&::-webkit-search-decoration {
-			-webkit-appearance: none;
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-decoration {
+	-webkit-appearance: none;
     }
   }
-
 }
 
 //  * Define consistent border, margin, and padding.
