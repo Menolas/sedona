@@ -1,23 +1,62 @@
 .toggler {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 100;
+
+  display: block;
   margin: 0;
   padding: 0;
-  border: none;
-
-  font-size: 0;
+  width: 23px;
+  height: 21px;
+  
   background-color: transparent;
+
+  cursor: pointer;
+  border: none;
 }
 
-.toggler__svg {
-  fill: @blue;
-}
+@media (max-width: @mobile-width-only) {
+  .toggler--nojs {
+    position: absolute;
+    top: -206px;
+    right: 20px;
+    z-index: 100;
 
-.toggler--open {
-  display: none;
-}
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 23px;
+    height: 22px;
+    
+    background-color: transparent;
 
-.toggler--open .toggler__svg {
-  fill: @white;
-}
+    cursor: pointer;
+    border: none;
+  }
+
+  .toggler--nojs::before,
+  .toggler--nojs::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 23px;
+    height: 4px;
+
+    background-color: @white;
+  }
+
+  .toggler--nojs::before {
+    transform: rotate(45deg);
+  }
+
+  .toggler--nojs::after {
+    transform: rotate(-45deg);
+  }
+}  
 
 @media (min-width: 768px) {
   .toggler {

@@ -9,7 +9,7 @@
 
 .social-list__link {
   display: block;
-  width: 47px;
+  width: 46px;
   height: 48px;
   text-align: center;
 
@@ -17,6 +17,10 @@
   line-height: 60px;
 
   background-color: #81b3d2;
+}
+
+.social-list__item:nth-child(2) .social-list__link {
+  width: 47px;
 }
 
 .social-list__icon {
@@ -47,5 +51,11 @@
 
   .social-list__item:last-child {
     margin-right: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .social-list {
+    margin-right: 82px;
   }
 }
