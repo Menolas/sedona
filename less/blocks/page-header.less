@@ -24,7 +24,7 @@
   background-position: center;
 }
 
-.papge-header__greeting-svg {
+.page-header__greeting-svg {
   width: 282px;
   height: 214px;
 }
@@ -42,6 +42,16 @@
   height: 39px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .page-header--nojs {
+    padding-top: 223px;
+  }
+
+  .page-header--nojs .page-header__logo {
+    top: 223px;
+  }
+}
+
 @media (min-width: 768px) {
   .page-header__greeting {
     padding-top: 78px;
@@ -54,6 +64,7 @@
 
   .page-header__greeting--inner {
     padding-top: 95px;
+    padding-bottom: 0;
     height: 195px;
   }
 

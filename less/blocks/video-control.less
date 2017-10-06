@@ -11,8 +11,8 @@
   text-align: center;
 
   padding-left: 22px;
-  padding-top: 21px;
-  height: 24px;
+  padding-top: 22px;
+  height: 23px;
 
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -39,8 +39,6 @@
 
 .video-control__down {
   display: flex;
-  justify-content: space-between;
-
   padding-top: 22px;
   padding-left: 25px;
   padding-right: 23px;
@@ -51,48 +49,105 @@
 }
 
 .video-control__replay {
-  position: absolute;
-  left: 25px;
-  bottom: -42px;
-
   width: 16px;
   height: 20px;
 
-  background: url("../img/replay-svg.png") no-repeat center;
+  fill: #5c6870;
 }
 
-.video-control__cc {
-  position: absolute;
-  right: 75px;
-  bottom: -43px;
-
+.video-control__sub {
   margin-left: 133px;
+  margin-right: 30px;
   width: 32px;
   height: 20px;
-
-  background: url("../img/subtitles-svg.png") no-repeat center;
 }
 
-.video-control__screen {
-  position: absolute;
-  right: 23px;
-  bottom: -43px;
-
+.video-control__fullscreen {
   width: 20px;
   height: 20px;
-  background: url("../img/fullscreen-svg.png") no-repeat center;
+}
+
+.video-control__icon path {
+  fill: #5c6870;
+}
+
+.video-control__icon polygon {
+  fill: #5c6870;
 }
 
 @media (min-width: 768px) {
   .video-control {
     left: 0;
+    bottom: 0;
 
     width: 648px;
+  }
+
+  .video-control__wrap {
+    position: relative;
+  }
+
+  .video-control__up {
+    padding-top: 45px;
+    padding-left: 93px;
+    height: 48px;
+  }
+
+  .video-control__scale {
+    width: 389px;
+  }
+
+  .video-control__mark {
+    left: 204px;
+  }
+
+  .video-control__down {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    padding-left: 35px;
+    padding-right: 41px;
+    padding-top: 35px;
+    width: 572px;
+    height: 58px;
+
+    background-color: transparent;
+  }
+
+  .video-control__sub {
+    margin-left: 473px;
+  }
+
+  .video-control__replay {
+    fill: @white;
+  }
+
+  .video-control__icon path {
+  fill: @white;
+}
+
+  .video-control__icon polygon {
+  fill: @white;
   }
 }
 
 @media (min-width: 1280px) {
   .video-control {
     width: 800px;
+  }
+
+  .video-control__scale {
+    width: 540px;
+  }
+
+  .video-control__down {
+    padding-right: 42px;
+    width: 723px;
+  }
+
+  .video-control__sub {
+    margin-left: 624px;
   }
 }
