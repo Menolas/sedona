@@ -2,6 +2,7 @@
   position: relative;
 
   margin: 0 auto;
+  margin-top: 1px;
   padding-top: 42px;
   padding-bottom: 5px;
   width: 320px;
@@ -28,23 +29,25 @@
   line-height: 1.8;
 }
 
-.slogan__triangle--top-tablet {
-  display: none;
-}
-
 .slogan__triangle {
   position: absolute;
   z-index: 100;
 }
 
 .slogan__triangle--top {
-  top: -26px;
+  top: -27px;
   left: 0;
+
+  width: 320px;
+  height: 57px;
 }
 
 .slogan__triangle--bottom {
   bottom: -37px;
   left: 0;
+
+  width: 320px;
+  height: 37px;
 }
 
 .slogan--inner {
@@ -64,6 +67,7 @@
 
 @media (min-width: 768px) {
   .slogan {
+    margin-top: 0;
     padding-top: 51px;
     padding-bottom: 50px;
     width: 486px;
@@ -79,15 +83,17 @@
     padding: 0;
   }
 
-  .slogan__triangle {
+  .slogan__triangle--bottom {
     display: none;
   }
 
-  .slogan__triangle--top-tablet {
+  .slogan__triangle--top {
     top: -57px;
     left: -141px;
 
     display: block;
+    width: 768px;
+    height: 57px;
   }
 
   .slogan--inner {
@@ -107,5 +113,12 @@
   .slogan--inner {
     padding-top: 113px;
     padding-bottom: 71px;
+  }
+
+  .slogan__triangle--top {
+    top: -57px;
+    left: -357px;
+    
+    width: 1200px;
   }
 }

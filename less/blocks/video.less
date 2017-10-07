@@ -26,7 +26,15 @@
   position: relative;
   width: 320px;
   height: 201px;
+
+  background-color: #d18f83;
   background: url("../img/video-mobile@1x.jpg") no-repeat center;
+  background-size: 320px 201px;
+
+  @media @retina {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 320px 201px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -52,8 +60,14 @@
   .video__content {
     width: 648px;
     height: 499px;
+    
+    background: url("../img/video-tablet@1x.jpg") no-repeat center;
+    background-size: 648px 499px;
 
-    background-color: @blue;
+    @media @retina {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 648px 499px;
+    }
   }
 }
 
@@ -66,5 +80,13 @@
   .video__content {
     width: 800px;
     height: 500px;
+
+    background: url("../img/video-desktop@1x.jpg") no-repeat center;
+    background-size: 800px 500px;
+
+    @media @retina {
+      background-image: url("../img/video-desktop@2x.jpg");
+      background-size: 800px 500px;
+    }
   }
 }

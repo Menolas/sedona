@@ -12,7 +12,11 @@
 
     <header class="page-header  page-header--nojs">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона - Небольшой городок в Аризоне">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона - Небольшой городок в Аризоне">
+        </picture>
       </a>
       <nav class="main-nav  main-nav--nojs">
         <button class="main-nav__toggler  toggler" type="button">
@@ -52,10 +56,13 @@
 
     <main class="page-main  page-main--inner">
       <div class="page-main__slogan  slogan  slogan--inner">
-        <svg class="slogan__triangle  slogan__triangle--top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="26.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve">
-          <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
-          <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
-        </svg>
+        <div class="slogan__triangle  slogan__triangle--top">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/bg-intro-triangle-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg"> 
+            <img src="img/bg-intro-triangle-mobile.svg">
+          </picture>
+        </div>
         <h1 class="slogan__title">Фото и видео</h1>
         <p class="slogan__bidding">
           Не можете решиться на путешествие из-за курса?
@@ -65,7 +72,11 @@
       <section class="gallery">
         <article class="gallery__item">
           <a class="gallery__item-link" href="#">
-              <img class="gallery__picture" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg">
+              <img class="gallery__picture" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg" alt="Неродные просторы">
+            </picture>
           </a>
           <div class="gallery__item-info">
             <div class="gallery__item-description">
@@ -90,7 +101,11 @@
         </article>
         <article class="gallery__item">
           <a class="gallery__item-link">
-              <img class="gallery__picture" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg">
+              <img class="gallery__picture" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg" alt="Местная растительность">
+            </picture>
           </a>
           <div class="gallery__item-info">
             <div class="gallery__item-description">
@@ -115,7 +130,11 @@
         </article>
         <article class="gallery__item">
           <a class="gallery__item-link" href="#">
-              <img class="gallery__picture" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg">
+              <img class="gallery__picture" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg" alt="Дорога на север">
+            </picture>  
           </a>
           <div class="gallery__item-info">
             <div class="gallery__item-description">
@@ -140,7 +159,11 @@
         </article>
         <article class="gallery__item">
           <a class="gallery__item-link" href="#">
-              <img class="gallery__picture" src="img/photo-bridge-mobile@1x.jpg" alt="Мост Дьявола">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg">
+              <img class="gallery__picture" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" alt="Мост Дьявола">
+            </picture>  
           </a>
           <div class="gallery__item-info">
             <div class="gallery__item-description">

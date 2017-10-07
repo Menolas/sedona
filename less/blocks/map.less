@@ -5,18 +5,62 @@
   background:
     url("../img/icon-map-marker.svg") no-repeat center,
     url("../img/bg-map-mobile@1x.jpg") no-repeat center;
-  background-color: #333333;
+  background-size: 
+    27px 27px,
+    320px 350px;  
+  background-color: #f3f2ee;
+
+  @media @retina {
+    background-image: 
+      url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-mobile@2x.jpg");
+    background-size: 
+      27px 27px,
+      320px 350px;  
+  }
 }
 
 @media (min-width: 768px) {
   .map {
     width: 768px;
     height: 350px;
-  }
+    
+    background-image: 
+      url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-tablet@1x.jpg");
+    background-size: 
+      27px 27px,
+      768px 350px;  
+
+    @media @retina {
+      background-image: 
+        url("../img/icon-map-marker.svg"),
+        url("../img/bg-map-tablet@2x.jpg");
+      background-size: 
+        27px 27px,
+        768px 350px; 
+    }
+  }     
 }
 
 @media (min-width: 1200px) {
   .map {
     width: 1200px;
+
+    background-image: 
+      url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-desktop@1x.jpg");
+    background-size: 
+      27px 27px,
+      1200px 350px;  
+
+    @media @retina {
+      background-image: 
+        url("../img/icon-map-marker.svg"),
+        url("../img/bg-map-desktop@2x.jpg");
+      background-size: 
+        27px 27px,
+        1200px 350px; 
+    }
   }
 }
