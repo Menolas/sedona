@@ -22,6 +22,11 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media @retina {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px 389px;
+  }
 }
 
 .page-header__greeting-svg {
@@ -60,6 +65,11 @@
     height: 350px;
 
     background-color: @blue;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media @retina {
+      background-image: url("../img/bg-back-tablet2x.jpg");
+    }
   }
 
   .page-header__greeting--inner {
@@ -82,6 +92,8 @@
 @media (min-width: 1280px) {
   .page-header__greeting {
     width: 1200px;
+
+    background-size: cover;
   }
 
   .page-header__greeting--inner {
