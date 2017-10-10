@@ -2,8 +2,9 @@
   position: relative;
 
   margin: 0 auto;
-  padding-top: 42px;
-  padding-bottom: 5px;
+  margin-top: 1px;
+  padding-top: 40px;
+  padding-bottom: 4px;
   width: 320px;
 
   background-image: url("../img/bg-triangle.svg");
@@ -12,7 +13,7 @@
 }
 
 .slogan__title {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding-right: 32px;
   padding-left: 32px;
   text-align: center;
@@ -25,7 +26,7 @@
   padding-right: 32px;
   padding-left: 32px;
   .text-style();
-  line-height: 1.8;
+  line-height: 1.86;
 }
 
 .slogan__triangle {
@@ -34,23 +35,34 @@
 }
 
 .slogan__triangle--top {
-  top: -26px;
+  top: -27px;
   left: 0;
+
+  width: 320px;
 }
 
 .slogan__triangle--bottom {
   bottom: -37px;
   left: 0;
+
+  width: 320px;
+  height: 37px;
+}
+
+.slogan__triangle-top-svg {
+  width: 320px;
+  height: auto;
 }
 
 .slogan--inner {
-  padding-top: 39px;
-  padding-bottom: 27px;
+  padding-top: 37px;
+  padding-bottom: 0;
 }
 
 .slogan--inner .slogan__title {
   margin-bottom: 26px;
 }
+
 .slogan--inner .slogan__bidding {
   padding-right: 23px;
   padding-left: 22px;
@@ -60,13 +72,16 @@
 
 @media (min-width: 768px) {
   .slogan {
+    margin-top: 0;
     padding-top: 51px;
-    padding-bottom: 50px;
+    padding-bottom: 49px;
     width: 486px;
   }
 
   .slogan__title {
+    margin-bottom: 30px;
     padding: 0;
+
     font-size: 21px;
     line-height: 1.238;
   }
@@ -75,13 +90,25 @@
     padding: 0;
   }
 
-  .slogan__triangle {
+  .slogan__triangle--bottom {
     display: none;
+  }
+
+  .slogan__triangle--top {
+    top: -57px;
+    left: -141px;
+
+    display: block;
+    width: 768px;
+  }
+
+  .slogan__triangle-top-svg {
+    width: 768px;
   }
 
   .slogan--inner {
     padding-top: 76px;
-    padding-bottom: 69px;
+    padding-bottom: 0;
   }
 
   .slogan--inner .slogan__title {
@@ -96,5 +123,16 @@
   .slogan--inner {
     padding-top: 113px;
     padding-bottom: 71px;
+  }
+
+  .slogan__triangle--top {
+    top: -57px;
+    left: -357px;
+
+    width: 1200px;
+  }
+
+  .slogan__triangle-top-svg {
+    width: 1200px;
   }
 }

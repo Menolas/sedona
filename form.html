@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <script>
+  // Picture element HTML5 shiv
+  document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.js" async></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
@@ -12,7 +17,11 @@
 
     <header class="page-header  page-header--nojs">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона - Небольшой городок в Аризоне">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона - Небольшой городок в Аризоне">
+        </picture>
       </a>
       <nav class="main-nav  main-nav--nojs">
         <button class="main-nav__toggler  toggler" type="button">
@@ -53,6 +62,13 @@
     <main class="page-main  page-main--inner  page-main--form">
 
       <div class="page-main__slogan  slogan  slogan--inner">
+        <div class="slogan__triangle  slogan__triangle--top">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/bg-intro-triangle-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+            <img class="slogan__triangle-top-svg" src="img/bg-intro-triangle-mobile.svg">
+          </picture>
+        </div>
         <h1 class="slogan__title">Оставьте свой отзыв</h1>
         <p class="slogan__bidding">
         Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>

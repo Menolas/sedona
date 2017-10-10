@@ -1,6 +1,11 @@
   <!DOCTYPE html>
   <html lang="ru">
   <head>
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
@@ -12,7 +17,11 @@
 
       <header class="page-header  page-header--nojs">
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона - Небольшой городок в Аризоне">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона - Небольшой городок в Аризоне">
+          </picture>
         </a>
         <nav class="main-nav  main-nav--nojs">
           <button class="main-nav__toggler  toggler" type="button">
@@ -87,10 +96,13 @@
 
       <main class="page-main">
         <div class="page-main__slogan  slogan">
-          <svg class="slogan__triangle  slogan__triangle--top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="26.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve">
-            <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
-            <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
-          </svg>
+          <div class="slogan__triangle  slogan__triangle--top">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img class="slogan__triangle-top-svg" src="img/bg-intro-triangle-mobile.svg">
+            </picture>
+          </div>
           <h1 class="slogan__title">
             Седона &nbsp;&mdash; небольшой городок в Аризоне, заслуживающий большего!
           </h1>
@@ -112,7 +124,11 @@
               </p>
             </div>
             <div class="benefits__picture">
-              <img src="img/main-city-mobile@1x.jpg" alt="Город Седона">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg">
+                <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" alt="Город Седона">
+              </picture>
             </div>
             <ul class="benefits__features  features">
               <li class="features__item">
@@ -178,7 +194,11 @@
               </p>
             </div>
             <div class="benefits__picture">
-              <img src="img/main-bridge-mobile@1x.jpg" alt="Мост Дьявола">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg">
+                <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg" alt="Мост Дьявола">
+              </picture>
             </div>
           </li>
           <li class="benefits__item">

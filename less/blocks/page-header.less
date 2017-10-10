@@ -7,6 +7,7 @@
   top: 0;
   left: 50%;
   z-index: 100;
+
   margin-left: -51px;
   width: 102px;
   height: 83px;
@@ -14,14 +15,20 @@
 
 .page-header__greeting {
   text-align: center;
+
   padding-top: 90px;
-  padding-bottom: 85px;
   width: 320px;
-  height: 214px;
+  height: 299px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 768px 389px;
+
+  @media @retina {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px 389px;
+  }
 }
 
 .page-header__greeting-svg {
@@ -31,15 +38,17 @@
 
 .page-header__greeting--inner {
   text-align: center;
+
   padding-top: 52px;
-  padding-bottom: 67px;
   width: 320px;
-  height: 39px;
+  height: 106px;
+
+  background-position: bottom;
 }
 
 .page-header__greeting--inner .page-header__greeting-svg {
   width: 229px;
-  height: 39px;
+  height: auto;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -60,6 +69,13 @@
     height: 350px;
 
     background-color: @blue;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 768px 518px;
+
+    @media @retina {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px 518px;
+    }
   }
 
   .page-header__greeting--inner {
@@ -75,22 +91,36 @@
 
   .page-header__greeting--inner .page-header__greeting-svg {
     width: 458px;
-    height: 78px;
+    height: auto;
   }
 }
 
 @media (min-width: 1280px) {
+  .page-header__logo {
+    margin-left: -94px;
+    width: 188px;
+    height: 96px;
+  }
+
   .page-header__greeting {
     width: 1200px;
+
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 1200px 518px;
+
+    @media @retina {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px 518px;
+    }
   }
 
   .page-header__greeting--inner {
-    padding-top: 105px;
-    height: 196px;
+    padding-top: 102px;
+    height: 199px;
   }
 
   .page-header__greeting--inner .page-header__greeting-svg {
     width: 461px;
-    height: 80px;
+    height: auto;
   }
 }
