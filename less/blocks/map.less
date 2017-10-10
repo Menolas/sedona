@@ -2,9 +2,11 @@
   width: 320px;
   height: 350px;
 
-  background:
-    url("../img/icon-map-marker.svg") no-repeat center,
-    url("../img/bg-map-mobile@1x.jpg") no-repeat center;
+  background-image:
+    url("../img/icon-map-marker.svg"),
+    url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size:
     27px 27px,
     320px 350px;
@@ -43,7 +45,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .map {
     width: 1200px;
 

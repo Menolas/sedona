@@ -36,9 +36,10 @@
 
 .fieldset {
   position: relative;
+
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   text-align: center;
   border: none;
 }
@@ -48,21 +49,26 @@
   position: absolute;
   bottom: 0;
   left: -20px;
+
   width: 320px;
   height: 1px;
+
   background-color: #e5e5e5;
 }
 
 .fieldset__title {
   display: block;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 22px;
+
   .header-style();
 }
 
 .fieldset__label {
-  display: block;
   position: relative;
+
+  display: block;
+
   .text-style();
 }
 
@@ -76,6 +82,7 @@
   padding-left: 22px;
   width: 100%;
   border: none;
+
   background-color: #f3f3f3;
   box-sizing: border-box;
 }
@@ -99,11 +106,16 @@
   margin-right: 13px;
 }
 
+.fieldset__label[for="customer-middlename"] {
+  margin-right: 16px;
+}
+
 .fieldset--radio .fieldset__label,
 .fieldset--checkbox .fieldset__label {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 79px;
+
   .header-style();
   text-transform: none;
 }
@@ -111,9 +123,10 @@
 .fieldset--radio .fieldset__label::before {
   content: "";
   position: absolute;
-  top: 17px;
+  top: 50%;
   left: 17px;
 
+  margin-top: -11px;
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -153,7 +166,7 @@
 
 .fieldset--radio .fieldset__wrap-input-label {
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .fieldset--radio .fieldset__wrap-input-label:last-child,
@@ -162,7 +175,7 @@
 }
 
 .fieldset--radio {
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 }
 
 .fieldset--radio .fieldset__input,
@@ -171,11 +184,11 @@
 }
 
 .fieldset--checkbox .fieldset__title {
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 }
 
 .fieldset--checkbox .fieldset__wrap-input-label {
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 }
 
 .fieldset--radio .fieldset__label:hover::before {
@@ -219,6 +232,7 @@
 }
 
 .fieldset--textarea .fieldset__input {
+  padding-top: 17px;
   width: 280px;
   height: 160px;
   box-sizing: border-box;
@@ -229,6 +243,7 @@
 }
 
 .fieldset--textarea {
+  padding-bottom: 47px;
   border-bottom: none;
 }
 
@@ -242,11 +257,7 @@
 }
 
 .fieldset--contact-info {
-  padding-bottom: 27px;
-}
-
-.fieldset--contact-info .fieldset__title {
-  padding-top: 21px;
+  padding-bottom: 29px;
 }
 
 .fieldset--contact-info .fieldset__wrap-input-label {
@@ -339,6 +350,7 @@
   }
 
   .fieldset--customer-info {
+    text-align: left;
     padding-left: 58px;
     padding-bottom: 50px;
     width: 266px;
@@ -352,7 +364,7 @@
   }
 
   .fieldset--contact-info .fieldset__title {
-    padding-bottom: 26px;
+    padding-bottom: 28px;
   }
 
   .fieldset--contact-info .fieldset__wrap-input-label {
@@ -367,6 +379,7 @@
   }
 
   .fieldset--checkbox .fieldset__title {
+    padding-top: 19px;
     padding-bottom: 43px;
   }
 
@@ -404,7 +417,7 @@
   }
 
   .fieldset--textarea .fieldset__title {
-    padding-bottom: 55px;
+    padding-bottom: 57px;
   }
 
   .fieldset--textarea .fieldset__input {
