@@ -160,26 +160,10 @@
           </fieldset>
         </div>
         <div class="form__wrap">
-          <div class="modal">
-            <h3 class="modal__header">Ваш вызов отправлен!</h3>
-            <div class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-            </div>
-            <div class="modal__btn-block">
-              <button class="btn btn--modal">Закрыть окно</button>
-            </div>
-          </div>
           <input class="btn  btn--sent-review" type="submit" value="Отправить отзыв">
           <div class="form__required-fields">&#42; &#8212;обязательные поля</div>
         </div>
-        <div class="modal  modal--failure">
-          <h3 class="modal__header">Что-то пошло не так!</h3>
-          <div class="modal__text">
-            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-          </div>
-          <div class="btn btn--modal-failure">ок</div>
-        </div>
       </form>
-
     </main>
 
     <footer class="page-footer">
@@ -224,6 +208,23 @@
         <span class="visually-hidden"> лендинг интенсива "Продвинутый HTML и CSS"</span>
       </a>
     </footer>
+
+    <div class="modal">
+      <h3 class="modal__header">Ваш вызов отправлен!</h3>
+      <div class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+      </div>
+      <div class="modal__btn-block">
+        <button class="btn btn--modal">Закрыть окно</button>
+      </div>
+    </div>
+
+    <div class="modal  modal--failure">
+      <h3 class="modal__header">Что-то пошло не так!</h3>
+      <div class="modal__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </div>
+      <div class="btn btn--modal-failure">ок</div>
+    </div>
 
   </div>
   <script src="js/script.js"></script>
