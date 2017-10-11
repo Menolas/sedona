@@ -313,15 +313,19 @@
     padding: 0;
   }
 
+  .fieldset::after {
+    display: none;
+  }
+
   .fieldset__title {
     padding-bottom: 58px;
     font-size: 21px;
     line-height: 1.238;
   }
 
-  .fieldset--contact-info::before,
-  .fieldset--checkbox::before,
-  .fieldset--textarea::before {
+  .fieldset--contact-info .fieldset__title::before,
+  .fieldset--checkbox .fieldset__title::before,
+  .fieldset--textarea .fieldset__title::before {
     content: "";
     position: absolute;
     left: 0;
@@ -333,13 +337,9 @@
     background-color: #dbdbdb;
   }
 
-  .fieldset::after {
-    display: none;
-  }
-
-  .fieldset--contact-info::after,
-  .fieldset--checkbox::after,
-  .fieldset--textarea::after {
+  .fieldset--contact-info .fieldset__title::after,
+  .fieldset--checkbox .fieldset__title::after,
+  .fieldset--textarea .fieldset__title::after {
     content: "";
     position: absolute;
     top: 30px;
@@ -352,8 +352,8 @@
     background-color: #dbdbdb;
   }
 
-  .fieldset--checkbox::before,
-  .fieldset--checkbox::after {
+  .fieldset--checkbox .fieldset__title::before,
+  .fieldset--checkbox .fieldset__title::after {
     top: 44px;
   }
 
@@ -367,7 +367,7 @@
   .fieldset--radio::before {
     content: "";
     position: absolute;
-    right: 0;
+    right: -2px;
     top: 20px;
     width: 1px;
     height: 292px;
@@ -473,16 +473,32 @@
     width: 400px;
   }
 
-  .fieldset--contact-info::before,
-  .fieldset--checkbox::before,
-  .fieldset--textarea::before {
+  .fieldset--contact-info .fieldset__title::before,
+  .fieldset--checkbox .fieldset__title::before,
+  .fieldset--textarea .fieldset__title::before {
+    top: 28px;
+
     width: 280px;
   }
 
-  .fieldset--contact-info::after,
-  .fieldset--checkbox::after,
-  .fieldset--textarea::after {
+  .fieldset--checkbox .fieldset__title::before {
+    top: 44px;
+  }
+
+  .fieldset--textarea .fieldset__title::before {
+    top: 32px;
+  }
+
+  .fieldset--contact-info .fieldset__title::after,
+  .fieldset--checkbox .fieldset__title::after,
+  .fieldset--textarea .fieldset__title::after {
+    top: 28px;
+
     width: 280px;
+  }
+
+  .fieldset--checkbox .fieldset__title::after {
+    top: 44px;
   }
 
   .fieldset--contact-info {
