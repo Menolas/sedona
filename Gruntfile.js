@@ -1,16 +1,13 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-contrib-less");
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
     less: {
       style: {
         files: {
-          "css/style.css": "less/style.less"
+          "build/css/style.css": "less/style.less"
         }
       }
     },
@@ -22,7 +19,7 @@ module.exports = function(grunt) {
             require("autoprefixer")()
           ]
         },
-        src: "css/*.css"
+        src: "build/css/*.css"
       }
     },
 
@@ -30,12 +27,12 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "*.html",
-            "css/*.css"
+            "build/*.html",
+            "build/css/*.css"
           ]
         },
         options: {
-          server: ".",
+          server: "build/",
           watchTask: true,
           notify: false,
           open: true,
@@ -46,12 +43,79 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["posthtml"]
+      },
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss"]
+        tasks: ["less", "postcss", "csso"]
       }
-    }
+    },
+
+    clean: {
+      build: ["build"]
+    },
+
+    copy: {
+      build: {
+        files: [{
+          expand: true,
+          src: [
+            "fonts/**/*.{woff,woff2}",
+            "img/**",
+            "js/**"
+          ],
+          dest: "build"
+        }]
+       }
+     },
+
+     csso: {
+       style: {
+         options: {
+           report: "gzip"
+         },
+         files: {
+           "build/css/style.min.css": ["build/css/style.css"]
+         }
+       }
+     },
+     svgstore: {
+       options: {
+         includeTitleElement: false
+       },
+       sprite: {
+         files: {
+           "build/img/sprite.svg": ["img/icon-*.svg"]
+         }
+       }
+     },
+     posthtml: {
+       options: {
+         use: [
+           require("posthtml-include")()
+         ]
+       },
+       html: {
+         files: [{
+           expand: true,
+           src: ["*.html"],
+           dest: "build"
+         }]
+       }
+     },
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+
+  grunt.registerTask("build", [
+    "clean",
+    "copy",
+    "less",
+    "postcss",
+    "csso",
+    "svgstore",
+    "posthtml"
+  ]);
 };
