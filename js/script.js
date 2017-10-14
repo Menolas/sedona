@@ -9,10 +9,15 @@ function initMap() {
     scrollwheel: false,
 });
 
-var image = "../img/icon-map-marker.svg"
+var image = {
+  url: "../img/icon-map-marker.svg",
+  scaledSize: new google.maps.Size(27,27),
+}
+
 var marker = new google.maps.Marker({
   position: latLng,
   map: map,
+  optimized: false,
   icon: image,
 });
 }

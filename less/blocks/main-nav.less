@@ -6,8 +6,7 @@
   background-color: @white;
 }
 
-.main-nav--closed .main-nav__toggler::before,
-.main-nav--closed .main-nav__toggler::after {
+.main-nav--closed .main-nav__toggler::before {
   content: "";
 
   position: absolute;
@@ -119,6 +118,7 @@
 
   .main-nav--nojs .toggler--nojs::before {
     transform: rotate(45deg);
+    box-shadow: none;
   }
 
   .main-nav--nojs .toggler--nojs::after {
