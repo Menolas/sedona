@@ -26,7 +26,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'less/**/*.less' --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "grunt less && grunt postcss",
+    "build": "grunt build",
     "start": "npm run build && grunt serve"
   },
   "browserslist": [

@@ -319,8 +319,10 @@
 
   .fieldset__title {
     position: relative;
-    
+
     padding-bottom: 58px;
+    width: 100%;
+
     font-size: 21px;
     line-height: 1.238;
   }
@@ -366,11 +368,11 @@
     order: 0;
   }
 
-  .fieldset--radio::before {
+  .fieldset--radio .fieldset__title::before {
     content: "";
     position: absolute;
-    right: -2px;
-    top: 20px;
+    right: 0;
+    top: 23px;
     width: 1px;
     height: 292px;
     background: #e5e5e5;
@@ -470,6 +472,10 @@
     margin-left: 75px;
   }
 
+  .fieldset--radio .fieldset__title::before {
+    right: 73px;
+  }
+
   .fieldset--customer-info {
     padding-left: 80px;
     width: 400px;
@@ -501,6 +507,10 @@
 
   .fieldset--checkbox .fieldset__title::after {
     top: 44px;
+  }
+
+  .fieldset--textarea .fieldset__title::after {
+    top: 32px;
   }
 
   .fieldset--contact-info {

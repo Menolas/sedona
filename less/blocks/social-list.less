@@ -14,13 +14,14 @@
 }
 
 .social-list__link {
-  display: block;
+  display: inline-block;
   width: 46px;
   height: 48px;
   text-align: center;
+  vertical-align: center;
 
   font-size: 0;
-  line-height: 60px;
+  line-height: 66px;
 
   background-color: #81b3d2;
 }
@@ -41,7 +42,7 @@
   background-color: #5496bd;
 }
 
-.social-list__link:active .social__link-icon {
+.social-list__link:active .social-list__icon {
   opacity: 0.3;
 }
 
@@ -49,12 +50,12 @@
   .social-list {
     margin-top: 0;
     margin-bottom: 0;
-    margin-right: 10px;
+    margin-right: 8px;
   }
 }
 
 @media (min-width: 1280px) {
   .social-list {
-    margin-right: 95px;
+    margin-right: 98px;
   }
 }
