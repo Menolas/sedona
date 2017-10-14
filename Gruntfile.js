@@ -69,42 +69,42 @@ module.exports = function(grunt) {
           dest: "build"
         }]
       }
-     },
+    },
 
-     csso: {
-       style: {
-         options: {
-           report: "gzip"
-         },
-         files: {
-           "build/css/style.min.css": ["build/css/style.css"]
-         }
-       }
-     },
-     svgstore: {
-       options: {
-         includeTitleElement: false
-       },
-       sprite: {
-         files: {
-           "build/img/sprite.svg": ["img/icon-*.svg"]
-         }
-       }
-     },
-     posthtml: {
-       options: {
-         use: [
-           require("posthtml-include")()
-         ]
-       },
-       html: {
-         files: [{
-           expand: true,
-           src: ["*.html"],
-           dest: "build"
-         }]
-       }
-     },
+    csso: {
+      style: {
+        options: {
+          report: "gzip"
+        },
+        files: {
+          "build/css/style.min.css": ["build/css/style.css"]
+        }
+      }
+    },
+    svgstore: {
+      options: {
+        includeTitleElement: false
+      },
+      sprite: {
+        files: {
+          "build/img/sprite.svg": ["img/icon-*.svg"]
+        }
+      }
+    },
+    posthtml: {
+      options: {
+        use: [
+          require("posthtml-include")()
+        ]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
+        }]
+      }
+    },
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
