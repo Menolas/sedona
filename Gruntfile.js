@@ -45,7 +45,7 @@ module.exports = function(grunt) {
     watch: {
       html: {
         files: ["*.html"],
-        tasks: ["posthtml"]
+        tasks: ["posthtml", "copy"]
       },
       style: {
         files: ["less/**/*.less"],
@@ -64,7 +64,8 @@ module.exports = function(grunt) {
           src: [
             "fonts/**/*.{woff,woff2}",
             "img/**",
-            "js/**"
+            "js/**",
+            "*.html"
           ],
           dest: "build"
         }]
@@ -115,7 +116,6 @@ module.exports = function(grunt) {
     "less",
     "postcss",
     "csso",
-    "svgstore",
-    "posthtml"
-  ]);
+    "svgstore"
+  ]); 
 };
