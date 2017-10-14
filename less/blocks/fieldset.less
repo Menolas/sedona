@@ -10,7 +10,13 @@
   color: @black;
 }
 
-.fieldset input::-ms-input-placeholder {
+.fieldset input:-ms-input-placeholder {
+  .header-style();
+  text-transform: none;
+  color: @black;
+}
+
+.fieldset input:-moz-placeholder {
   .header-style();
   text-transform: none;
   color: @black;
@@ -28,7 +34,13 @@
   color: @black;
 }
 
-.fieldset textarea::-ms-input-placeholder {
+.fieldset textarea:-ms-input-placeholder {
+  .header-style();
+  text-transform: none;
+  color: @black;
+}
+
+.fieldset textarea:-moz-placeholder {
   .header-style();
   text-transform: none;
   color: @black;

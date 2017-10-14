@@ -51,8 +51,6 @@
 .video-control__replay {
   width: 16px;
   height: 20px;
-
-  fill: #5c6870;
 }
 
 .video-control__sub {
@@ -73,6 +71,19 @@
 
 .video-control__icon polygon {
   fill: #5c6870;
+}
+
+.video-control__replay:hover .video-control__icon path,
+.video-control__sub:hover .video-control__icon path,
+.video-control__fullscreen:hover .video-control__icon polygon {
+  fill: #333333;
+}
+
+.video-control__replay:active .video-control__icon path,
+.video-control__sub:active .video-control__icon path,
+.video-control__fullscreen:active .video-control__icon polygon {
+  fill: #333333;
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
