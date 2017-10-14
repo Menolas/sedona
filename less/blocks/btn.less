@@ -10,13 +10,48 @@
   line-height: 1.238;
   font-weight: 700;
 
-  background-color: #81b3d2;
+  background-color: @blue;
+}
+
+.btn:hover {
+  background-color: #669ec0;
+}
+
+.btn:active,
+.btn:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.btn[disabled] {
+  background-color: #e5e5e5;
+}
+
+.btn--modal-failure {
+  margin: 0 auto;
+  width: 180px;
 }
 
 @media (min-width: 768px) {
+  .btn {
+    width: 458px;
+  }
+
   .btn--sent-review {
     text-align: left;
     padding-left: 64px;
     width: 324px;
+  }
+
+  .btn--modal-failure {
+    width: 272px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .btn--sent-review {
+    text-align: center;
+    padding-left: 0;
+    width: 480px;
   }
 }

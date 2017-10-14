@@ -36,6 +36,12 @@
   height: 214px;
 }
 
+.page-header__triangle {
+  margin-top: 53px;
+  width: 320px;
+  height: 27px;
+}
+
 .page-header__greeting--inner {
   text-align: center;
 
@@ -44,6 +50,10 @@
   height: 106px;
 
   background-position: bottom;
+}
+
+.page-header__greeting--inner .page-header__triangle {
+  margin-top: 34px;
 }
 
 .page-header__greeting--inner .page-header__greeting-svg {
@@ -93,6 +103,24 @@
     width: 458px;
     height: auto;
   }
+
+  .page-header__triangle {
+    margin-top: 27px;
+    width: 768px;
+    height: 57px;
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .page-header__triangle-svg {
+    display: none;
+  }
+
+  .page-header__greeting--inner .page-header__triangle {
+    margin-top: 52px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -122,5 +150,19 @@
   .page-header__greeting--inner .page-header__greeting-svg {
     width: 461px;
     height: auto;
+  }
+
+  .page-header__triangle {
+    margin-top: 27px;
+    width: 1200px;
+    height: 57px;
+
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .page-header__greeting--inner .page-header__triangle {
+    margin-top: 56px;
   }
 }

@@ -25,6 +25,15 @@
   border-top: none;
 }
 
+.site-list__link:hover {
+  background-color: #669ec0;
+}
+
+.site-list__link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
 @media (min-width: 768px) {
   .site-list {
     display: flex;
@@ -44,6 +53,8 @@
     color: @black;
     font-size: 14px;
     line-height: 1.85;
+
+    background-color: transparent;
   }
 
   .site-list__item:first-child {
@@ -56,6 +67,30 @@
 
   .site-list__item:nth-child(3) {
     margin-right: 49px;
+  }
+
+  .site-list__link:hover {
+    color: #81b3d2;
+
+    background-color: transparent;
+  }
+
+  .site-list__link:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    background-color: transparent;
+  }
+
+  .site-list__item--active .site-list__link {
+    color: #766357;
+  }
+
+  .site-list__item--active .site-list__link:hover {
+    color: #604e43;
+  }
+
+  .site-list__item--active .site-list__link:active {
+    color: rgba(118, 99, 87, 0.3);
   }
 }
 

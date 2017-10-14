@@ -120,6 +120,10 @@
   text-transform: none;
 }
 
+.fieldset--checkbox .fieldset__label {
+  padding-left: 81px;
+}
+
 .fieldset--radio .fieldset__label::before {
   content: "";
   position: absolute;
@@ -152,16 +156,11 @@
   background-color: #f3f3f3;
 }
 
-.fieldset--checkbox .fieldset__input:checked + .fieldset__label::after {
-  content: "";
-  position: absolute;
-  top: 19px;
-  left: 16px;
-
-  width: 25px;
-  height: 19px;
-
-  background: url("../img/icon-tick.svg") no-repeat center;
+.fieldset--checkbox .fieldset__input:checked + .fieldset__label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 21px;
+  background-size: 24px 16px;
 }
 
 .fieldset--radio .fieldset__wrap-input-label {
@@ -314,14 +313,52 @@
     padding: 0;
   }
 
+  .fieldset::after {
+    display: none;
+  }
+
   .fieldset__title {
+    position: relative;
+
     padding-bottom: 58px;
+    width: 100%;
+
     font-size: 21px;
     line-height: 1.238;
   }
 
-  .fieldset::after {
-    display: none;
+  .fieldset--contact-info .fieldset__title::before,
+  .fieldset--checkbox .fieldset__title::before,
+  .fieldset--textarea .fieldset__title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: #dbdbdb;
+  }
+
+  .fieldset--contact-info .fieldset__title::after,
+  .fieldset--checkbox .fieldset__title::after,
+  .fieldset--textarea .fieldset__title::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+
+    display: block;
+    width: 125px;
+    height: 1px;
+
+    background-color: #dbdbdb;
+  }
+
+  .fieldset--checkbox .fieldset__title::before,
+  .fieldset--checkbox .fieldset__title::after {
+    top: 44px;
   }
 
   .fieldset--radio {
@@ -331,11 +368,11 @@
     order: 0;
   }
 
-  .fieldset--radio::before {
+  .fieldset--radio .fieldset__title::before {
     content: "";
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 23px;
     width: 1px;
     height: 292px;
     background: #e5e5e5;
@@ -431,9 +468,49 @@
     width: 476px;
   }
 
+  .fieldset--radio .fieldset__title {
+    margin-left: 75px;
+  }
+
+  .fieldset--radio .fieldset__title::before {
+    right: 73px;
+  }
+
   .fieldset--customer-info {
     padding-left: 80px;
     width: 400px;
+  }
+
+  .fieldset--contact-info .fieldset__title::before,
+  .fieldset--checkbox .fieldset__title::before,
+  .fieldset--textarea .fieldset__title::before {
+    top: 28px;
+
+    width: 280px;
+  }
+
+  .fieldset--checkbox .fieldset__title::before {
+    top: 44px;
+  }
+
+  .fieldset--textarea .fieldset__title::before {
+    top: 32px;
+  }
+
+  .fieldset--contact-info .fieldset__title::after,
+  .fieldset--checkbox .fieldset__title::after,
+  .fieldset--textarea .fieldset__title::after {
+    top: 28px;
+
+    width: 280px;
+  }
+
+  .fieldset--checkbox .fieldset__title::after {
+    top: 44px;
+  }
+
+  .fieldset--textarea .fieldset__title::after {
+    top: 32px;
   }
 
   .fieldset--contact-info {
@@ -442,8 +519,8 @@
   }
 
   .fieldset--contact-info .fieldset__title {
-    padding-top: 18px;
-    padding-bottom: 74px;
+    padding-top: 16px;
+    padding-bottom: 76px;
   }
 
   .fieldset--contact-info .fieldset__wrap {
@@ -458,7 +535,12 @@
 
     margin: 0;
     align-items: center;
-    width: 480px;
+    width: 481px;
+  }
+
+  .fieldset--contact-info .fieldset__wrap-input-label:first-child {
+    margin-right: 79px;
+    width: 401px;
   }
 
   .fieldset--contact-info .fieldset__wrap-input {
@@ -467,7 +549,7 @@
 
   .fieldset--contact-info .fieldset__label {
     margin: 0;
-    margin-right: 16px;
+    margin-right: 17px;
   }
 
   .fieldset--contact-info .fieldset__hide {
@@ -479,13 +561,26 @@
     padding-bottom: 46px;
   }
 
+  .fieldset--checkbox .fieldset__title {
+    padding-bottom: 41px;
+  }
+
   .fieldset--checkbox .fieldset__wrap {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .fieldset--checkbox .fieldset__wrap-input-label {
     margin: 0;
-    width: 240px;
+    width: auto;
+  }
+
+  .fieldset--textarea {
+    padding-bottom: 53px;
+  }
+
+  .fieldset--textarea .fieldset__title {
+    padding-top: 20px;
   }
 
   .fieldset--textarea .fieldset__input {

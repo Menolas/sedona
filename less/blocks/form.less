@@ -1,6 +1,4 @@
 .form {
-  position: relative;
-
   margin-top: 17px;
   padding: 0 20px;
   padding-bottom: 36px;
@@ -9,10 +7,6 @@
 
 .form__required-fields {
   display: none;
-}
-
-.form__wrap:nth-child(2) {
-  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -44,7 +38,13 @@
 
 @media (min-width: 1280px) {
   .form {
-    padding: 0 120px;
+    padding-right: 120px;
+    padding-left: 119px;
+    padding-top: 41px;
     padding-bottom: 66px;
+  }
+
+  .form__required-fields {
+    margin-top: 5px;
   }
 }
