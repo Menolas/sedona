@@ -26,18 +26,11 @@ module.exports = function(grunt) {
     browserSync: {
       server: {
         bsFiles: {
-          src: [
-            "build/*.html",
-            "build/css/*.css"
-          ]
+          src: ["build/*.html", "build/css/*.css"]
         },
         options: {
           server: "build/",
           watchTask: true,
-          notify: false,
-          open: true,
-          cors: true,
-          ui: false
         }
       }
     },
@@ -45,7 +38,7 @@ module.exports = function(grunt) {
     watch: {
       html: {
         files: ["*.html"],
-        tasks: ["posthtml", "copy"]
+        tasks: ["posthtml"]
       },
       style: {
         files: ["less/**/*.less"],
@@ -116,6 +109,7 @@ module.exports = function(grunt) {
     "less",
     "postcss",
     "csso",
-    "svgstore"
+    "svgstore",
+    "posthtml"
   ]);
 };
