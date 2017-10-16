@@ -25,6 +25,10 @@
   border-top: none;
 }
 
+.site-list__item:last-child {
+  box-shadow: inset 0 -2px 7px rgba(0, 0, 0, 0.2);
+}
+
 .site-list__link:hover {
   background-color: #669ec0;
 }
@@ -69,6 +73,10 @@
     margin-right: 49px;
   }
 
+  .site-list__item:last-child {
+    box-shadow: none;
+  }
+
   .site-list__link:hover {
     color: #81b3d2;
 
@@ -94,7 +102,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .site-list {
     padding-left: 91px;
     padding-right: 70px;
