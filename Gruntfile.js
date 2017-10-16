@@ -31,6 +31,10 @@ module.exports = function(grunt) {
         options: {
           server: "build/",
           watchTask: true,
+          notify: false,
+          open: true,
+          cors: true,
+          ui: false
         }
       }
     },
