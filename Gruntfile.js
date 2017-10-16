@@ -79,6 +79,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     svgstore: {
       options: {
         includeTitleElement: false
@@ -89,6 +90,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     posthtml: {
       options: {
         use: [
