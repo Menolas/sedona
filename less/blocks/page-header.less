@@ -90,20 +90,13 @@
     }
   }
 
-  .page-header__greeting--inner {
-    padding-top: 95px;
-    padding-bottom: 0;
-    height: 195px;
-  }
-
   .page-header__greeting-svg {
     width: 460px;
     height: 350px;
   }
 
-  .page-header__greeting--inner .page-header__greeting-svg {
-    width: 458px;
-    height: auto;
+  .page-header__triangle-svg {
+    display: none;
   }
 
   .page-header__triangle {
@@ -114,14 +107,33 @@
     background-image: url("../img/bg-intro-triangle-tablet.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 768px 57px;
   }
 
-  .page-header__triangle-svg {
+  .page-header__greeting--inner {
+    padding-top: 95px;
+    padding-bottom: 0;
+    height: 195px;
+  }
+
+  .page-header__greeting--inner .page-header__greeting-svg {
+    width: 458px;
+    height: auto;
+  }
+
+  .page-header__greeting--inner .page-header__triangle-svg {
     display: none;
   }
 
   .page-header__greeting--inner .page-header__triangle {
     margin-top: 53px;
+    width: 768px;
+    height: 57px;
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px 57px;
   }
 }
 
@@ -166,5 +178,12 @@
 
   .page-header__greeting--inner .page-header__triangle {
     margin-top: 56px;
+    width: 1200px;
+    height: 57px;
+
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px 57px;
   }
 }
