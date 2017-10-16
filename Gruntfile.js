@@ -105,7 +105,7 @@ module.exports = function(grunt) {
           dest: "build"
         }]
       }
-    },
+    }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
