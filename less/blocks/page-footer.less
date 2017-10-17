@@ -10,8 +10,11 @@
 }
 
 .page-footer__slogan {
-  width: 140px;
-  text-align: center;
+  max-width: 145px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   font-family: @font;
   color: @black;
