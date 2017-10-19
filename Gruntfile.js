@@ -104,6 +104,36 @@ module.exports = function(grunt) {
           dest: "build"
         }]
       }
+    },
+
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          src: ["build/img/**/*.jpg"]
+        }]
+      }
+    },
+
+    cwebp: {
+      static: {
+        files: {"build/img/webp/.webp": "src/img.jpg"}
+      },
+      dynamic: {
+        options: {
+          q: 50
+        },
+        files: [{
+          expand: true,
+          cwd: "src/",
+          src: ["**/*.jpg"],
+          dest: "build/img/webp/"
+        }]
+      }
     }
   });
 
@@ -116,6 +146,7 @@ module.exports = function(grunt) {
     "postcss",
     "csso",
     "svgstore",
-    "posthtml"
+    "posthtml",
+    "imagemin"
   ]);
 };

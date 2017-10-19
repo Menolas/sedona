@@ -152,8 +152,8 @@
 }
 
 .fieldset--radio .fieldset__input:checked + .fieldset__label::before {
-  background-color: @black;
-  box-shadow: 0 0 0 17px #d6d6d6;
+  background-color: #333333;
+  box-shadow: 0 0 0 17px #f3f3f3;
 }
 
 .fieldset--checkbox .fieldset__label::before {
@@ -169,12 +169,19 @@
   background-color: #f3f3f3;
 }
 
-.fieldset--checkbox .fieldset__input:checked + .fieldset__label::before {
-  background-color: #d6d6d6;
+.fieldset--checkbox .fieldset__input:checked + .fieldset__label::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 15px;
+  width: 25px;
+  height: 16px;
+  z-index: 20;
+
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
-  background-position: 16px 21px;
-  background-size: 24px 16px;
+  background-position: center;
+  background-size: 25px 16px;
 }
 
 .fieldset--radio .fieldset__wrap-input-label {
@@ -209,18 +216,18 @@
   box-shadow: 0 0 0 17px #e6e6e6;
 }
 
+.fieldset--radio .fieldset__input:checked + .fieldset__label:hover::before {
+  background-color: #333333;
+  box-shadow: 0 0 0 17px #e6e6e6;
+}
+
 .fieldset--radio .fieldset__label:active::before {
   background-color: #d6d6d6;
   box-shadow: 0 0 0 17px #d6d6d6;
 }
 
-.fieldset--radio .fieldset__input:checked + .fieldset__label:hover::before {
-  background-color: @black;
-  box-shadow: 0 0 0 17px #e6e6e6;
-}
-
 .fieldset--radio .fieldset__input:checked + .fieldset__label:active::before {
-  background-color: #a3a3a3;
+  background-color: rgba(51, 51, 51, 0.3);
   box-shadow: 0 0 0 17px #d6d6d6;
 }
 
