@@ -3,6 +3,8 @@ studying project (HTML&CSS advanced - HTML Academy)
 * Student: [Елена Кунина](https://up.htmlacademy.ru/adaptive/12/user/234524).
 * Mentor: `Сама себе режиссер - и слава Богу`.
 
+vew on github pages https://menolas.github.io/sedona/
+
 ## Description
 This is the second (the first one is Pink) template for practice from HTML Academy. Here I employed adaptive and fluid layout techniques together with responsive images (retina@2x and svg), custom-built icon fonts, svg and traditional png sprites.
 
