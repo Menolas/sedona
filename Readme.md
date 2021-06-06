@@ -1,6 +1,5 @@
 studying project (HTML&CSS advanced - HTML Academy)
-# SEdona 
-
+# Sedona
 * Student: [Елена Кунина](https://up.htmlacademy.ru/adaptive/12/user/234524).
 * Mentor: `Сама себе режиссер - и слава Богу`.
 
