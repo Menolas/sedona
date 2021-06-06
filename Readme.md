@@ -14,3 +14,8 @@ at 320px,
 at 768px,
 and at 1200px.
 Main technologies employed: SCSS as CSS preprocessor and Grunt as project build tool. See package.json for the list of plugins/dependencies and gruntfile.js for details of my workflow.
+
+## How to deploy
+1. Clone the project from Github.
+2. Install all required dependencies via NPM (run npm install in your terminal while in the project root directory). Note: you also need to have Node.js and NPM installed on your machine.
+3. Run sturt command in the terminal window.
