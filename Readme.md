@@ -6,7 +6,7 @@ studying project (HTML&CSS advanced - HTML Academy)
 vew on github pages https://menolas.github.io/sedona/
 
 ## Description
-This is the second (the first one is Pink) template for practice from HTML Academy. Here I employed adaptive and fluid layout techniques together with responsive images (retina@2x and svg), custom-built icon fonts, svg and traditional png sprites.
+This is template for practice from HTML Academy. Here I employed adaptive and fluid layout techniques together with responsive images (retina@2x and svg), svg and traditional png sprites.
 
 The original design encompassed three resolutions (mobile, tablet and desktop), with four breakpoints envisaged by me:
 
