@@ -18,4 +18,4 @@ Main technologies employed: SCSS as CSS preprocessor and Grunt as project build 
 ## How to deploy
 1. Clone the project from Github.
 2. Install all required dependencies via NPM (run npm install in your terminal while in the project root directory). Note: you also need to have Node.js and NPM installed on your machine.
-3. Run sturt command in the terminal window.
+3. Run "start" command in the terminal window.
