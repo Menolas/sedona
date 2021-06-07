@@ -8,7 +8,7 @@ vew on github pages https://menolas.github.io/sedona/
 ## Description
 This is template for practice from HTML Academy. Here I employed adaptive and fluid layout techniques together with responsive images (retina@2x and svg), svg and traditional png sprites.
 
-The original design encompassed three resolutions (mobile, tablet and desktop), with four breakpoints envisaged by me:
+The original design encompassed three resolutions (mobile, tablet and desktop), with three breakpoints envisaged by me:
 
 at 320px,
 at 768px,
